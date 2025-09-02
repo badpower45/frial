@@ -1,13 +1,9 @@
 "use client";
 
 import * as React from "react";
-import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog";
+import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog@1.1.6";
 
-// Utility function to concatenate class names
-export function cn(...classes: (string | undefined | false | null)[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
+import { cn } from "./utils";
 import { buttonVariants } from "./button";
 
 function AlertDialog({

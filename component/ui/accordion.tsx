@@ -1,13 +1,10 @@
 "use client";
 
 import * as React from "react";
-import * as AccordionPrimitive from "@radix-ui/react-accordion";
-import { ChevronDownIcon } from "lucide-react";
+import * as AccordionPrimitive from "@radix-ui/react-accordion@1.2.3";
+import { ChevronDownIcon } from "lucide-react@0.487.0";
 
-// Utility function to concatenate class names
-export function cn(...classes: (string | undefined | false | null)[]): string {
-  return classes.filter(Boolean).join(' ');
-}
+import { cn } from "./utils";
 
 function Accordion({
   ...props
